@@ -1,0 +1,10 @@
+<resources>
+    //Ficheros string
+    <string name="app_name">My First App</string>
+    <string name="female">Mujer</string>
+    <string name="male">Hombre</string>
+    <string name="height">Altura</string>
+    <string name="weight">Peso</string>
+
+
+</resources>
