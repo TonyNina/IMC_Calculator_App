@@ -37,6 +37,22 @@
       android:layout_margin="16dp"
       android:text="IMC APP"
       />
+  <Button
+      android:id="@+id/btnTODO"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="TODO APP"
+      />
+
+  <Button
+      android:id="@+id/btnSuperHero"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="SuperHero App"
+      android:textAllCaps="true"
+      />
 
 
 

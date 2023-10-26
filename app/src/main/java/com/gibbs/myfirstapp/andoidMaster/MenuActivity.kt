@@ -7,6 +7,8 @@ import android.widget.Button
 import com.gibbs.myfirstapp.R
 import com.gibbs.myfirstapp.andoidMaster.firstApp.FirstAppActivity
 import com.gibbs.myfirstapp.andoidMaster.imcCalulator.ImcCalculatorActivity
+import com.gibbs.myfirstapp.andoidMaster.superheroapp.SuperHeroListActivity
+import com.gibbs.myfirstapp.andoidMaster.todoApp.TodoActivity
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,9 +16,21 @@ class MenuActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menu)
         val btnSaludarAPP = findViewById<Button>(R.id.btnSaludoApp)
         val btnIMCApp = findViewById<Button>(R.id.btnIMCApp)
+        val btnTODO = findViewById<Button>(R.id.btnTODO)
+        val btnSuperHero = findViewById<Button>(R.id.btnSuperHero)
+
+
         btnSaludarAPP.setOnClickListener{navigateToSaludarApp() }
         btnIMCApp.setOnClickListener{ navigateToIMCApp()}
+        btnTODO.setOnClickListener { navigateToTODOAPP() }
+        btnSuperHero.setOnClickListener { navigateToSuperHeroApp() }
 
+    }
+
+
+    private fun navigateToTODOAPP() {
+        val intent = Intent(this, TodoActivity::class.java )
+        startActivity(intent)
     }
 
     private fun navigateToIMCApp() {
@@ -26,6 +40,10 @@ class MenuActivity : AppCompatActivity() {
 
     private fun navigateToSaludarApp(){
         val intent = Intent(this, FirstAppActivity::class.java)
+        startActivity(intent)
+    }
+    private fun navigateToSuperHeroApp() {
+        val intent = Intent(this, SuperHeroListActivity::class.java)
         startActivity(intent)
     }
 }

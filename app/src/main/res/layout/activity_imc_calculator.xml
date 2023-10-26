@@ -166,6 +166,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
                     android:src="@drawable/ic_remove"
+                    android:backgroundTint="@color/background_fab"
                     />
 
 
@@ -174,6 +175,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_add"
+                    android:backgroundTint="@color/background_fab"
                     />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -226,15 +228,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
-                    android:src="@drawable/ic_remove"/>
+                    android:src="@drawable/ic_remove"
+                    android:backgroundTint="@color/background_fab"/>
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnPlusAge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_add"/>
-
-
+                    android:src="@drawable/ic_add"
+                    android:backgroundTint="@color/background_fab"/>
 
 
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -249,9 +251,12 @@
         android:layout_height="80dp"
         android:text="@string/calculate"
         android:textAllCaps="true"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/background_fab"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
