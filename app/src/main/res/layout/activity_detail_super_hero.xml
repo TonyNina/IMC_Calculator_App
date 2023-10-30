@@ -35,11 +35,27 @@
             <TextView
                 android:id="@+id/tvSuperheroName"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="43dp"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:textSize="30sp"
                 android:textStyle="bold"
+                tools:text="Tony Strak" />
+
+            <TextView
+                android:id="@+id/tvSuperheroRealName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                tools:text="Tony Strak" />
+
+            <TextView
+                android:id="@+id/tvPublisher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
                 tools:text="Tony Strak" />
 
             <LinearLayout
@@ -111,54 +127,73 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
                     android:text="Intelligence"
-                    android:textSize="10sp"
-                    android:layout_weight="1"
-                    />
+                    android:textSize="10sp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
                     android:text="Strength"
-                    android:textSize="10sp"
-                    android:layout_weight="1"
-                    />
+                    android:textSize="10sp" />
+
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
                     android:text="Speed"
-                    android:textSize="10sp"
-                    android:layout_weight="1"
-                    />
+                    android:textSize="10sp" />
+
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
                     android:text="Durability"
-                    android:textSize="10sp"
-                    android:layout_weight="1"
-                    />
+                    android:textSize="10sp" />
+
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
                     android:text="Power"
-                    android:textSize="10sp"
-                    android:layout_weight="1"
-                    />
+                    android:textSize="10sp" />
+
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="4dp"
-                    android:text="Combat"
-                    android:textSize="10sp"
                     android:layout_weight="1"
-                    />
-
-
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Combat"
+                    android:textSize="10sp" />
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvWork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="32dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:gravity="center_horizontal"
+                tools:text="Tony Strak, nacio en el año 2001, cresio y se educo en el valle de tambo,Arequipa, un valle cuyo mayor lujo es su ubicacion " />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
